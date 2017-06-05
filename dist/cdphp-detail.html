@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://use.fontawesome.com/86ad5e1241.js"></script>
+    <link rel="stylesheet" href="/styles/main.css">
+  </head>
+  <body>
+  <div class="container-fluid">
+		<div class="row">
+			<nav class="col-sm-3 col-md-2 hidden-xs-down sidebar">
+				<a class="navbar-brand" href="/"><img src="/images/cdphp.png" /></a>
+				<ul class="nav nav-pills flex-column">
+					<li class="nav-item">
+						<a class="active nav-link" href="/"><i class="fa fa-home"></i> Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="patients"><i class="fa fa-users"></i> Patients </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="claims"><i class="fa fa-hdd-o"></i> Claims </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="authorizations"><i class="fa fa-random"></i> Authorizations </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="Reports"><i class="fa fa-line-chart"></i> Reports </a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="resources"><i class="fa fa-clone"></i> Resources </a>
+					</li>
+				</ul>
+				<div class="meta-info">
+					<h5>Need help?</h5>
+					<p>Dial 518-641-3500 <small>Current Wait Time: 3 mins</small></p>
+          <button class="btn btn-chat">
+              <i class="fa fa-comments"></i> 
+              Live Chat 
+              <span class="btn-label">Online</span>
+            </button>
+				</div>
+			</nav>
+			<main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2">
+				<nav class="navbar navbar-light bg-green rounded navbar-toggleable-md">
+					<div class="collapse navbar-collapse header-nav">
+						<div class="mr-auto">Capital Region Provider ABC</div>
+						<div class="my-2 my-md-0 header-meta">
+              <div class="dropdown">
+                <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Welcome Regina
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#">Another action</a>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </div>
+              </div>
+              <a href="#" class="link-flag">
+                <i class="fa fa-flag"></i> <span class="count">8</span>
+              </a>
+              <a href="#" class="btn btn-signout">Sign Out</a>
+						</div>
+					</div>
+				</nav>
+				<div class="main-body">
+					<a href="cdphp.html"><i class="fa fa-angle-left"></i> Back to Search Results</a>
+          <div class="search-tabs">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+              <li role="presentation" class="active"><a href="#singlePatient" aria-controls="singlePatient" role="tab" data-toggle="tab"> <i class="fa fa-times"></i> Firstname Lastname</a></li>
+              <li role="presentation"><a href="#multiplePatient" aria-controls="multiplePatient" role="tab" data-toggle="tab"> <i class="fa fa-plus"></i> Search Another Patient</a></li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div role="tabpanel" class="tab-pane active" id="singlePatient">
+                <div class="search-details">
+                  <h1>Firstname Lastname <span>for care <a href="#">today <i class="fa fa-calendar"></i></a><span></h1>
+                  <div class="info">
+                    <i class="fa fa-user"></i> ID #123456789-01 (<a href="#">See History</a>) <span class="date"><i class="fa fa-birthday-cake"></i> Jan 18, 1982 (34) </span> <span class="ssn"><a href="#">Reveal SSN</a></span>
+                  </div>
+                  <div class="health-alert">
+                    <i class="fa fa-exclamation-circle"></i> <strong>Health Quality Alert:</strong> Firstname has not had a wellness visit since 1/4/2011.
+                    <a href="#">and 3 more..</a>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-sm-7">
+                      <div class="details">
+                          <div class="detail-list">
+                            <div class="detail-meta">
+                              <span class="label active">Active</span>
+                              <span class="detail-date">through 12/31/16</span>
+                            </div>
+                            <div class="details-body active">
+                              <h4>PPO National HRA</h4>
+                              <div class="links"><a href="#">Eligibility History Details <i class="fa fa-angle-right"></i> </a></div>
+                            </div>
+                          </div>
+                          <div class="detail-list">
+                            <div class="details-body">
+                              <h4>Primary Care Physician</h4>
+                              <div class="meta-info">
+                                <span class="label info">Not Assigned</span>
+                                <a href="#"><i class="fa fa-question-circle-o"></i></a>
+                              </div>
+                              <div class="links"><a href="#">Assign PCP <i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                          </div>
+                          <div class="detail-list">
+                            <div class="details-body">
+                              <h4>Coordination of Benefits</h4>
+                              <div class="meta-info">
+                                <span class="label info">No</span>
+                              </div>
+                              <div class="links"><a href="#">More Info <i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                          </div>
+                          <div class="detail-list">
+                            <div class="details-body">
+                              <h4>Group</h4>
+                              <div class="meta-info">
+                                XYZ Employer (1234563453)
+                              </div>
+                              <div class="links"><a href="#">More Info <i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                          </div>
+                      </div>
+
+                      <div class="detail-header">
+                        <div class="details-title">
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              IN-NETWORK
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                          </div>
+                          <span>COST SHARE DETAILS</span>
+                        </div>
+                        <div class="right-link">
+                          <a href="#"><i class="fa fa-cog"></i> Customize</a>
+                        </div>
+                      </div>
+                      <div class="detail-box">
+                        
+                        <div class="detail-box-header">
+                          Choose the Default Place of Service
+                          <div class="detail-box-buttons">
+                            <a href="#">Provider</a> <a href="#">Office</a> <a href="#" class="active">Inpatient Outpatient</a>
+                          </div>
+                        </div>
+
+                        <div class="detail-box-body">
+                          <div class="detail-list">
+                            <div class="details-body">
+                              <h4>
+                                <i class="fa fa-stethoscope"></i> PCP Office Visit
+                              </h4>
+                              <div class="meta-info">
+                                $20 Copay
+                              </div>
+                              <div class="links"><a href="#"><i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                          </div>
+                          <div class="detail-list">
+                            <div class="details-body">
+                              <h4>
+                                <i class="fa fa-user-md"></i> Specialist Office Visit
+                              </h4>
+                              <div class="meta-info">
+                                $20 Copay
+                              </div>
+                              <div class="links"><a href="#"><i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                          </div>
+
+                          <div class="detail-list">
+                            <div class="details-body">
+                              <h4>
+                                <i class="fa fa-hotel"></i> Inpatient Facility
+                              </h4>
+                              <div class="meta-info">
+                                $20 Copay
+                              </div>
+                              <div class="links"><a href="#"><i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                          </div>
+
+                          <div class="detail-list">
+                            <div class="details-body">
+                              <h4>
+                                <i class="fa fa-line-chart"></i> Outpatient Hospital
+                              </h4>
+                              <div class="meta-info">
+                                $20 Copay
+                              </div>
+                              <div class="links"><a href="#"><i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                          </div>
+
+                          <div class="detail-list">
+                            <div class="details-body">
+                              <h4>
+                                <i class="fa fa-h-square"></i> Ambulatory Surgery
+                              </h4>
+                              <div class="meta-info">
+                                $20 Copay
+                              </div>
+                              <div class="links"><a href="#"><i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                          </div>
+
+                          <div class="detail-list">
+                            <div class="details-body">
+                              <h4>
+                                <i class="fa fa-ambulance"></i> Emergency Room
+                              </h4>
+                              <div class="meta-info">
+                                $20 Copay
+                              </div>
+                              <div class="links"><a href="#"><i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                          </div>
+
+                          <div class="detail-list">
+                            <div class="details-body">
+                              <h4>
+                                <i class="fa fa-wheelchair"></i> D.M.E
+                              </h4>
+                              <div class="meta-info">
+                                $20 Copay
+                              </div>
+                              <div class="links"><a href="#"><i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                          </div>
+                        
+                          <div class="detail-list">
+                            <div class="details-body">
+                              <h4>
+                                <i class="fa fa-eraser"></i> Urgent Care
+                              </h4>
+                              <div class="meta-info">
+                                $20 Copay
+                              </div>
+                              <div class="links"><a href="#"><i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                          </div>
+
+                          <div class="detail-list">
+                            <div class="details-body">
+                              <h4>
+                                <i class="fa fa-handshake-o"></i> Rx Coverage
+                              </h4>
+                              <div class="meta-info">
+                                Yes
+                              </div>
+                              <div class="links"><a href="#"><i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                          </div>
+
+                          <div class="detail-list">
+                            <div class="details-body">
+                              <h4>
+                                <i class="fa fa-user-plus"></i> Dental Coverage
+                              </h4>
+                              <div class="meta-info">
+                                Yes (Delta Dental)
+                              </div>
+                              <div class="links"><a href="#"><i class="fa fa-angle-right"></i></a></div>
+                            </div>
+                          </div>
+                        
+                        </div>
+
+                        <div class="detail-box-footer">
+                          <form>
+                            <div class="form-group">
+                              <label for="">Verify eligibility, limits and benefits for another service:</label>
+                              <div class="form">
+                                <i class="fa fa-search"></i>
+                                <div class="form-body">
+                                  <input class="form-control" placeholder="Enter benefit name..." type="text">
+                                </div>
+                                <div class="form-button">
+                                  <button class="btn btn-primary">Check Coverage</button>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+
+                      </div>
+
+                      <div class="personal-info">
+                        <h3>Personal Information</h3>
+                        <div class="personal-info-box">
+                          <div class="personal-info-item">
+                            <div class="title">Address</div>
+                            <div class="detail">
+                              123 Northern Blvd.<br/>
+                              Albany, NY 12204<br/>
+                              Albany County
+                            </div>
+                          </div>
+                          
+                          <div class="personal-info-item">
+                            <div class="title">Phone</div>
+                            <div class="detail">
+                              (518) 555-1234
+                            </div>
+                          </div>
+
+                          <div class="personal-info-item">
+                            <div class="title">Gender</div>
+                            <div class="detail">
+                              Female
+                            </div>
+                          </div>
+                          
+                          <div class="personal-info-item">
+                            <div class="title">Family</div>
+                            <div class="detail">
+                              02 - Firstname Lastname (spouse)<br/>
+                              03 - Firstname Lastname (child)<br/>
+                              04 - Firstname Lastname (child)
+                            </div>
+                          </div>
+
+                        </div>
+                      </div>
+
+                    </div>
+                    <div class="col-sm-5">
+                      <div class="history">
+                        <h4>Claim History</h4>
+                        <div class="history-timeline">
+                          <div class="timeline">
+                            <div class="entry">
+                              <div class="title">
+                                <h3>JAN 1, 2016</h3>
+                              </div>
+                              <div class="body">
+                                <div class="id">#000000005600</div>
+                                <div class="meta">
+                                  <div class="price">$35.81</div>
+                                  <div class="label in-progress">Processing</div>
+                                </div>
+                                <div class="link">
+                                  <a href="#"><i class="fa fa-angle-right"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="entry">
+                              <div class="title">
+                                <h3>JAN 1, 2016</h3>
+                              </div>
+                              <div class="body">
+                                <div class="id">#000000005600</div>
+                                <div class="meta">
+                                  <div class="price">$20.81</div>
+                                  <div class="label compleate">Paid</div>
+                                </div>
+                                <div class="link">
+                                  <a href="#"><i class="fa fa-angle-right"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="entry">
+                              <div class="title">
+                                <h3>JAN 1, 2016</h3>
+                              </div>
+                              <div class="body">
+                                <div class="id">#000000005600</div>
+                                <div class="meta">
+                                  <div class="price">$20.81</div>
+                                  <div class="label compleate">Paid</div>
+                                </div>
+                                <div class="link">
+                                  <a href="#"><i class="fa fa-angle-right"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="entry">
+                              <div class="title">
+                                <h3>JAN 1, 2016</h3>
+                              </div>
+                              <div class="body">
+                                <div class="id">#000000005600</div>
+                                <div class="meta">
+                                  <div class="price">$20.81</div>
+                                  <div class="label compleate">Paid</div>
+                                </div>
+                                <div class="link">
+                                  <a href="#"><i class="fa fa-angle-right"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="entry">
+                              <div class="title">
+                                <h3>JAN 1, 2016</h3>
+                              </div>
+                              <div class="body">
+                                <div class="id">#000000005600</div>
+                                <div class="meta">
+                                  <div class="price">$20.81</div>
+                                  <div class="label compleate">Paid</div>
+                                </div>
+                                <div class="link">
+                                  <a href="#"><i class="fa fa-angle-right"></i></a>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                          <div class="history-footer">
+                            <a href="#">Show 10 more</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane" id="multiplePatient">
+                  Multiple Patients
+              </div>
+            </div>
+
+          </div>
+					
+				</div>
+			</main>
+		</div>
+	</div>
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
+</html>

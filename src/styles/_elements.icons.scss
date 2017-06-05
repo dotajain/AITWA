@@ -1,0 +1,24 @@
+@mixin icon-angle-right($size: 40px, $border-width: 1px, $border-color: $white){
+	@include size($size);
+	@include transform(rotate(45deg));
+	border-top: $border-width solid $border-color;
+	border-right: $border-width solid $border-color;
+}
+
+@mixin icon-angle-left($size: 40px, $border-width: 1px, $border-color: $white){
+	@include size($size);
+	@include transform(rotate(45deg));
+	border-bottom: $border-width solid $border-color;
+	border-left: $border-width solid $border-color;
+}
+
+@mixin icon-angle-down($size: 40px, $border-width: 1px, $border-color: $white){
+	@include size($size);
+	@include transform(rotate(45deg));
+	border-right: $border-width solid $border-color;
+	border-bottom: $border-width solid $border-color;
+}
+.icon-angle-down{
+	@include icon-angle-down(15px, 1px, $white);
+	display: block;
+}

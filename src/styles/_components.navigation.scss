@@ -1,0 +1,128 @@
+.navbar {
+    border: 0;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+
+    &-default {
+        background-color: $white;
+        min-height: auto;
+        @include bp(mobile-max) {
+            border-bottom: 1px solid $nav-gray-color;
+        }
+        .navbar-toggle {
+            .icon-bar {
+                background-color: $white;
+                border-radius: 0;
+                width: 28px;
+                margin: 0 auto;
+                & + .icon-bar {
+                    margin-top: 6px;
+                }
+            }
+            &:hover, &:focus{
+                background-color: $brand-color;
+            }
+        }
+    }
+
+    &-primary {
+        background-color: $nav-gray-color;
+    }
+    &-brand {
+        font-family: $GalanoGrotesqueSemiBold;
+        text-transform: uppercase;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        height: auto;
+        max-width: 280px;
+        @include bp(tablet-max) {
+            font-size: 1.2em;
+        }
+        @include bp(mobile-large) {
+            max-width: none;
+        }
+        &.with-image {
+            padding: 0;
+            img {
+                max-height: 60px;
+                vertical-align: top;
+            }
+        }
+    }
+    
+    &-default {
+        .navbar-brand {
+            color: $brand-color;
+        }
+    }
+    &-meta {
+        @include bp(tablet) {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        &-items{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            &.has-brand-image{
+                .social>a {
+                    height: 60px;
+                    line-height: 60px;
+                }
+                .btn-group .btn{
+                    line-height: 60px;
+                    padding: 0 15px;
+                }
+            }
+        }
+    }
+    &-collapse {
+        padding: 0;
+        border: 0;
+    }
+    &-nav {
+        @include bp(tablet) {
+            margin: 0 -10px;
+        }
+        >li {
+            a {
+                text-transform: uppercase;
+                font-family: $GalanoGrotesqueSemiBold;
+                font-size: .94em;
+                color: $black;
+                @include bp(tablet) {
+                    padding-left: 10px;
+                    padding-right: 10px;
+                }
+            }
+        }
+    }
+    &-toggle{
+        border: 0;
+        margin: 0;
+        height: 60px;
+        width: 40px;
+        padding: 0;
+        background: $black;
+        border-radius: 0;
+        text-align: center;
+        @include bp(mobile-large) {
+            height: 40px;
+        }
+    }
+}
+
+
+.header-links {
+    a{
+        color: $black;
+        text-transform: uppercase;
+        font-family: $GalanoGrotesqueMedium;
+        padding: 0 10px;
+        &.call-back-link{
+            color: #ea224d;
+        }
+    }
+}

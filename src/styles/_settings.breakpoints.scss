@@ -1,0 +1,13 @@
+// Breakpoints
+$mobile:			360px !default;
+
+$mobile-large:		640px !default;
+
+$tablet:			768px !default;
+$tablet-large:		1024px !default;
+$tablet-medium:		992px !default;
+$tablet-max:		$tablet-large - 1 !default;
+
+$desktop:			1200px !default;
+$desktop-medium:	1440px !default;
+$desktop-large:		1600px !default;

@@ -1,0 +1,140 @@
+$border-box-sizing: true !default;
+html {
+    font-size: 1em;
+    line-height: $base-line-height / $base-font-size;
+    /* [1] */
+    padding: 0;
+    padding-bottom: 0;
+    background-color: $white;
+    color: $gray-dark;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    letter-spacing: 0.03em;
+}
+
+body {
+    background-color: transparent;
+    height: 100%;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    font-family: 'GalanoGrotesqueRegular', sans-serif;
+    letter-spacing: .07em;
+    color: #757575;
+    @media (max-width: 991px) {
+        font-size: 12px;
+    }
+    @media (max-width: 767px) {
+        font-size: 11px;
+    }
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+dl,
+dd,
+ol,
+ul,
+form,
+fieldset,
+legend,
+figure,
+table,
+th,
+td,
+caption,
+hr {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+dl,
+blockquote,
+p,
+address,
+hr,
+table,
+fieldset,
+figure,
+pre {
+    margin-bottom: $base-spacing-unit;
+}
+
+ul,
+ol,
+dd {
+    margin-left: $base-spacing-unit;
+}
+
+address {
+    font-style: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+#{$all-text-inputs} {
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+    background-color: transparent;
+    border-color: #c5c5c5;
+    resize: none;
+    vertical-align: top;
+}
+
+#{$all-text-inputs-focus},
+#{$all-text-inputs-hover} {
+    box-shadow: none;
+    text-shadow: none;
+    outline: none;
+}
+
+#{$all-buttons},
+a {
+    cursor: pointer;
+    @include transition(all .3s $ease-in-out-sine);
+    text-decoration: none;
+    font-family: $GalanoGrotesqueRegular;
+}
+
+#{$all-buttons-focus},
+#{$all-buttons-hover},
+a {
+    outline: none;
+    text-decoration: none;
+}
+
+a {
+    color: $brand-color;
+    &:hover {
+        color: $black;
+    }
+}
+
+p {
+    font-weight: 300;
+    font-size: 1em;
+}

@@ -1,0 +1,46 @@
+@mixin slide__dots(){
+	@include position(absolute, null null 0 null);
+	@include padding(0);
+	@include margin(0);
+	display: block;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+	line-height: 0;
+}
+@mixin slide__dots--list(){
+	@include size(8px);
+	@include padding(0 7px);
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	vertical-align: top;
+}
+
+@mixin slide__dots--list-button(){
+	@include size(8px);
+	@include padding(0);
+	@include transition(all .3s ease);
+	font-size: 0;
+	list-style: 0;
+	display: block;
+	cursor: pointer;
+	color: transparent;
+	border: 1px solid rgba($white, .6);
+	outline: none;
+	background-color: transparent;
+}
+@mixin slide__dots--list-button-active() {
+	background-color: $white;
+	border-color: $white;
+}
+
+%slide__dots, .slide__dots{
+	@include slide__dots();
+}
+%slide__dots--list, .slide__dots--list{
+	@include slide__dots--list();
+}
+%slide__dots--list-button, .slide__dots--list-button{
+	@include slide__dots--list-button();
+}

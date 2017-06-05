@@ -1,0 +1,166 @@
+$color--white: #FFFFFF;
+$color--black: #000000;
+$color--light-grey: #E6E6E6;
+$color--grey: #CCCCCC;
+$color--dark-grey: #7B7B7B;
+$color--primary: $blue;
+$color--secondary: $blue;
+
+.control-inline {
+  display: flex;
+}
+
+label {
+  font-weight: normal;
+}
+
+// Basic control styles
+.control{
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-weight: normal;
+  font-size: .9em;
+  line-height: 1.1;
+  font-family: $GalanoGrotesqueMedium;
+  color: #000;
+  .control-inline & {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+  // Hide default browser input
+  input{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+}
+    
+
+// Custom control
+.control__indicator{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background: $color--light-grey;
+  
+  .control--radio & {
+    border-radius: 50%; // Makes radio buttons circlular
+  }
+  
+  // Hover and focus
+  .control:hover input ~ &,
+  .control input:focus ~ & {
+    background: $color--grey;
+  }
+  
+  // Checked
+  .control input:checked ~ & {
+    background: $color--primary;
+  }
+
+  // Hover when checked
+  .control:hover input:not([disabled]):checked ~ &,
+  .control input:checked:focus ~ &{
+    background: $color--secondary;
+  }
+  
+  // Hide default browser input
+  .control input:disabled ~ & {
+    background: $color--light-grey;
+    opacity: 0.6;
+    pointer-events: none;
+  }
+
+  &:after { 
+    content: '';
+    position: absolute;
+    display: none; // Hide check
+
+    .control input:checked ~ & {
+      display: block; // Show check
+    }
+ 
+    // Checkbox tick
+    .control--checkbox & {
+      left: 5px;
+      top: 1px;
+      width: 6px;
+      height: 10px;
+      border: solid #fff;
+      border-width: 0 2px 2px 0;
+      transform: rotate(45deg);
+    }
+    
+    // Disabled tick colour
+    .control--checkbox input:disabled ~ & {
+      border-color: $color--dark-grey;
+    }
+    // Radio button inner circle
+    .control--radio & {
+      left: 5px;
+      top: 5px;
+      height: 5px;
+      width: 5px;
+      border-radius: 50%;
+      background: $color--white;
+    }
+
+    // Disabled circle colour
+    .control--radio input:disabled ~ & {
+      background: $color--dark-grey;
+    }
+  }
+}
+
+
+
+.aitwa-login {
+  background-color: $color--white;
+  padding: 0;
+  .login-form-action {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+}
+.field-validation-error {
+    color: #d41313;
+    padding: 4px 0;
+    width: 100%;
+}
+
+.aitwa-login-header {
+  padding: 20px 0 0;
+  text-align: center;
+}
+
+.aitwa-login-account-type {
+  padding: 20px; 
+  > label {
+    color: $blue;
+    font-family: $GalanoGrotesqueMedium;
+  }
+}
+
+.aitwa-login-entries {
+  background-color: #cef2ff;
+  padding: 0 20px 20px;
+}
+
+.btn-signup {
+    background: #00ede7;
+    color: #000;
+}
+
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
+  -webkit-text-fill-color: #000 !important;
+}

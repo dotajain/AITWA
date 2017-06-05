@@ -1,0 +1,31 @@
+.header-main {
+    width: 100%;
+    z-index: 999;
+    @include bp(tablet) {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+}
+
+.social {
+    font-size: 0;
+    background-color: $nav-gray-color;
+    text-align: center;
+    > a {
+        height: 41px;
+        width: 30px;
+        font-size: 15px;
+        display: inline-block;
+        line-height: 40px;
+        color: $gray-text;
+        &:hover{
+            color: $brand-color;
+        }
+    }
+}
+.main {
+    @include bp(tablet) {
+        padding-top: 90px;
+    }
+}

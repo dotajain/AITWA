@@ -1,0 +1,68 @@
+.aitwa-footer {
+    background-color: #2d3a42;
+    padding: 50px 0;
+    font-size: .85em;
+    color: #b4bec3;
+    .aitwa-footer-info{
+        padding-top: 20px;
+    }
+    p{
+        font-size: 1em;
+        line-height: 1.8;
+        a {
+            color: #fff;
+        }
+    }
+    a {
+        color: #b4bec3;
+    }
+    h3{
+        color: #fff;
+        font-size: 1.3em;
+        margin-bottom: 20px;
+    }
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .social{
+        background-color: transparent;
+        text-align: left;
+    }
+    .aitwa-footer-links{
+        li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #556067;
+            a{
+                display: block;
+                &:before {
+                    content: "\f101";
+                    display: inline-block;
+                    font: normal normal normal 14px/1 FontAwesome;
+                    font-size: inherit;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    margin-right: 10px;
+                }
+            }
+            i{
+                margin-right: 10px;
+            }
+            i, span{
+                display: inline-block;
+            }
+            span{
+                width: 88%;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+.aitwa-footer-copy{
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #13242f;
+}

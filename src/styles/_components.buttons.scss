@@ -1,0 +1,38 @@
+.btn {
+    text-transform: uppercase;
+    font-family: $GalanoGrotesqueSemiBold;
+    min-height: 40px;
+    border-radius: 2px;
+    line-height: 30px;
+    &-group{
+        &.open{
+            .dropdown-toggle{
+                box-shadow: none;
+            }
+        }
+    }
+    &-primary {
+        background-color: #00aced;
+        color: #fff;
+        border-color: #00aced;
+    }
+}
+
+.dropdown {
+    &-toggle {
+        border: 0;
+        border-radius: 0;
+    }
+    &-menu {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        >li {
+            > a {
+                padding: 10px;
+            }
+        }
+    }
+}

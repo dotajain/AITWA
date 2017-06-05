@@ -1,0 +1,12 @@
+.aitwa-row {
+    @include bp(tablet-medium) {
+        display: flex;
+        margin: 0;
+    }
+}
+.aitwa-col {
+    @include bp(tablet-medium) {
+        padding: 0;
+        display: flex;
+    }   
+}

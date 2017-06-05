@@ -1,0 +1,157 @@
+.modal {}
+
+.modal-content {
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.modal-backdrop {
+    background-color: #8a8a8a;
+}
+
+.modal-header {
+    position: relative;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    z-index: 99;
+}
+
+.modal-header .close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    z-index: 999;
+}
+
+.login .modal-body {
+    padding: 0;
+    display: flex;
+}
+
+.login-info {
+    width: 40%;
+    float: left;
+    background-color: #b7284e;
+    padding: 15px;
+    color: white;
+}
+
+.login-main {
+    width: 60%;
+    float: left;
+    padding: 20px;
+}
+
+.login ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.login-tabs {
+    text-align: left;
+}
+
+.login-tabs li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.login-tabs li>a {
+    display: block;
+    text-transform: uppercase;
+    padding: 3px 0;
+}
+
+label {
+    font-weight: normal;
+    margin: 0;
+}
+
+.form-control {
+    border-radius: 0;
+    box-shadow: none;
+    border-color: #000;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-left: 0;
+}
+
+.form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.login .form-group {
+    position: relative;
+    margin: 0;
+}
+
+.login .form-group label {
+    pointer-events: none;
+    -webkit-font-smoothing: antialiased;
+    z-index: 1;
+    -webkit-transform: translate3d(0, 28px, 0) scale(1);
+    transform: translate3d(0, 28px, 0) scale(1);
+    transition: -webkit-transform cubic-bezier(.25, .8, .25, 1) .25s;
+    transition: transform cubic-bezier(.25, .8, .25, 1) .25s;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+}
+
+.login .form-group.input-foucs label,
+.login .form-group.input-has-value label {
+    -webkit-transform: translate3d(0, 6px, 0) scale(.75);
+    transform: translate3d(0, 6px, 0) scale(.75);
+}
+
+.has-error .form-control,
+.has-error .form-control:focus {
+    box-shadow: none;
+}
+
+.invalid {
+    display: none;
+}
+
+.has-error .invalid {
+    color: #ec2525;
+    font-size: 12px;
+    background: #ffe7e7;
+    display: block;
+    padding: 2px 4px;
+    display: block;
+}
+
+.login-trouble {
+    text-align: right;
+    display: block;
+    padding-top: 3px;
+    font-size: 12px;
+}
+
+.login .btn {
+    margin-bottom: 5px;
+}
+
+.helper {
+    display: block;
+    opacity: .7;
+}
+
+.signup-box,
+.fpassword-box,
+.trouble-login-box {
+    display: none;
+}
+
+.signup-box .btn {
+    margin-top: 15px;
+}
+
+.fpassword-box .form-group {
+    margin-bottom: 15px;
+}

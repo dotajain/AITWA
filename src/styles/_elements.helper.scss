@@ -1,0 +1,58 @@
+%e-hide{
+	display: none;
+	&.in{
+		display: block;
+		opacity: 0;
+		visibility: hidden;
+		@include transition(all .4s ease);
+	}
+	&.fade{
+		opacity: 1;
+		visibility: visible;
+	}
+}
+@mixin e-right() {
+	float: right;
+}
+@mixin e-left() {
+	float: left;
+}
+@mixin e-text--center(){
+	text-align: center;
+}
+@mixin e-text--right(){
+	text-align: right;
+}
+@mixin e-text--left(){
+	text-align: left;
+}
+
+.e-text--center, %e-text--center{
+	@include e-text--center();	
+}
+
+.e-text--right, %e-text--right{
+	@include e-text--right();	
+}
+
+.e-text--left, %e-text--left{
+	@include e-text--left();	
+}
+
+
+.e-right, %e-right{
+	@include e-right();
+}
+.e-left, %e-left{
+	@include e-left();
+}
+
+
+.e-hide{
+	@extend %e-hide;
+}
+.e-v-center{
+	@include bp(tablet) {
+		@include vertical-center-block();
+	}
+}
